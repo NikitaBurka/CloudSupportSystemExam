@@ -1,0 +1,32 @@
+﻿@model CloudSupportSystem.Models.SupportRequest
+
+@{
+    ViewData["Title"] = "Створити заявку";
+}
+
+<div class="container mt-4" style="max-width: 600px;">
+    <h2>Створити нову заявку</h2>
+    <form asp-action="Create" class="mt-3">
+        <div class="mb-3">
+            <label asp-for="UserName" class="form-label">Ім’я користувача</label>
+            <input asp-for="UserName" class="form-control" />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Subject" class="form-label">Тема</label>
+            <input asp-for="Subject" class="form-control" />
+            <span asp-validation-for="Subject" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Опис</label>
+            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Priority" class="form-label">Пріоритет</label>
+            <select asp-for="Priority" class="form-control" asp-items="Html.GetEnumSelectList<CloudSupportSystem.Models.Priority>()"></select>
+        </div>
+        <button type="submit" class="btn btn-success">Створити та відправити в SQS</button>
+        <a asp-action="Index" class="btn btn-secondary">Назад</a>
+    </form>
+</div>

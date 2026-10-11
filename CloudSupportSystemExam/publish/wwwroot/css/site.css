@@ -1,0 +1,201 @@
+/* Dark Gaming Theme Palette */
+:root {
+    --bg-main: #0a0c10;
+    --bg-card: #12161f;
+    --bg-hover: #1a202c;
+    --accent-purple: #6366f1;
+    --accent-cyan: #06b6d4;
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --glow-purple: rgba(99, 102, 241, 0.25);
+}
+
+body {
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary) !important;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+}
+
+/* Навбар */
+.navbar {
+    background: rgba(18, 22, 31, 0.8) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-primary) !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+    .nav-link:hover {
+        color: var(--accent-cyan) !important;
+        text-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+    }
+
+/* Основний контейнер картки */
+.main-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--glow-purple);
+    margin-top: 30px;
+}
+
+/* Заголовки */
+h1, h2, h3, h4 {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Кнопка створення */
+.btn-cyber {
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    transition: all 0.25s ease;
+}
+
+    .btn-cyber:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+    }
+
+/* Таблиця */
+.table-cyber {
+    color: var(--text-primary) !important;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+    .table-cyber thead th {
+        background-color: transparent !important;
+        color: var(--text-secondary);
+        border: none;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        padding-bottom: 12px;
+    }
+
+    .table-cyber tbody tr {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border-color);
+        transition: all 0.2s ease;
+    }
+
+        .table-cyber tbody tr:hover {
+            background: var(--bg-hover);
+            transform: scale(1.005);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+    .table-cyber td {
+        padding: 14px 16px;
+        vertical-align: middle;
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+        .table-cyber td:first-child {
+            border-left: 1px solid var(--border-color);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .table-cyber td:last-child {
+            border-right: 1px solid var(--border-color);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+/* Бейджі пріоритетів та статусів */
+.badge-cyber {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.priority-low {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.priority-medium {
+    background: rgba(234, 179, 8, 0.15);
+    color: #fde047;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.priority-high {
+    background: rgba(249, 115, 22, 0.15);
+    color: #fb923c;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.priority-critical {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+}
+
+.status-open {
+    background: rgba(6, 182, 212, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.status-inprogress {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.status-resolved {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.status-closed {
+    background: rgba(107, 114, 128, 0.2);
+    color: #9ca3af;
+    border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+/* Кнопка дії у таблиці */
+.btn-action {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary) !important;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+    .btn-action:hover {
+        background: var(--accent-purple);
+        border-color: var(--accent-purple);
+        box-shadow: 0 0 12px var(--glow-purple);
+    }
+
+/* Футер */
+footer {
+    background: var(--bg-main) !important;
+    color: var(--text-secondary) !important;
+    border-top: 1px solid var(--border-color) !important;
+}

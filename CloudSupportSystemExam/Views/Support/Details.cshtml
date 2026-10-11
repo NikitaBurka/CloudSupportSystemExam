@@ -1,0 +1,30 @@
+﻿@model CloudSupportSystem.Models.SupportRequest
+
+@{
+    ViewData["Title"] = "Деталі заявки";
+}
+
+<div class="container mt-4" style="max-width: 600px;">
+    <h2>Деталі заявки №@Model.Id</h2>
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <p><strong>Користувач:</strong> @Model.UserName</p>
+            <p><strong>Тема:</strong> @Model.Subject</p>
+            <p><strong>Опис:</strong> @Model.Description</p>
+            <p><strong>Пріоритет:</strong> <span class="badge bg-secondary">@Model.Priority</span></p>
+            <p><strong>Статус:</strong> <span class="badge bg-info text-dark">@Model.Status</span></p>
+            <p><strong>Дата створення:</strong> @Model.CreatedAt.ToLocalTime().ToString("g")</p>
+        </div>
+    </div>
+
+    <form asp-action="UpdateStatus" method="post" class="mt-3">
+        <input type="hidden" name="id" value="@Model.Id" />
+        <div class="mb-3">
+            <label class="form-label">Змінити статус:</label>
+            <select name="status" class="form-control" asp-items="Html.GetEnumSelectList<CloudSupportSystem.Models.Status>()"></select>
+        </div>
+        <button type="submit" class="btn btn-primary">Оновити статус</button>
+        <a asp-action="Index" class="btn btn-secondary">Назад до списку</a>
+    </form>
+</div>

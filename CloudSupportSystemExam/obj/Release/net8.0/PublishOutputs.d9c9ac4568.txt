@@ -1,0 +1,15 @@
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\CloudSupportSystemExam.exe
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\appsettings.Development.json
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\appsettings.json
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\CloudSupportSystemExam.dll
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\CloudSupportSystemExam.runtimeconfig.json
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\CloudSupportSystemExam.pdb
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\AWSSDK.Core.dll
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\AWSSDK.Extensions.NETCore.Setup.dll
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\AWSSDK.SQS.dll
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\Microsoft.EntityFrameworkCore.dll
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\Npgsql.dll
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\NIKITA BURKA\source\repos\CloudSupportSystemExam\CloudSupportSystemExam\publish\CloudSupportSystemExam.deps.json
